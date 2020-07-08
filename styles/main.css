@@ -30,7 +30,9 @@ button:disabled {
   Theme: numeric
 */
 .keyboard-container {
-    max-width: 350px;
+    position: absolute;
+    top: 150px;
+
     margin: 0 auto;
     box-sizing: border-box;
     padding: 20px;
@@ -197,4 +199,3 @@ button:disabled {
         background-color: darkred;
     }
 }
-

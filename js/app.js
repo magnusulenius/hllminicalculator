@@ -11,14 +11,14 @@ let myKeyboard = new Keyboard( {
     physicalKeyboardHighlightBgColor: "#2e2e2e",
     layout: {
         'default': [
-            '7 8 9',
-            '4 5 6',
             '1 2 3',
+            '4 5 6',
+            '7 8 9',
             '0 {bksp}'
         ]
     },
     display: {
-        '{bksp}': 'delete',
+        '{bksp}': 'X',
     },
     maxLength: {
         'default': 4,
@@ -115,7 +115,7 @@ function clearOldInfo() {
 
         let resultNode = '<div class="last-result"><span class="last-input">' + targetInput + '</span>' + '<span class="last-distance">' + targetDistance + '</span></div>';
         let lastResults = document.querySelector( '.last-info' );
-        lastResults.insertAdjacentHTML( 'afterbegin', resultNode );
+        lastResults.insertAdjacentHTML( 'beforeend', resultNode );
     }
 
     if (totalLastResults.length > 0) {
